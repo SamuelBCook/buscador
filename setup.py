@@ -8,12 +8,11 @@ setup(
   author = 'Samuel Cook',                   
   author_email = 'samcook23@hotmail.com',     
   url = 'https://github.com/SamuelBCook',  
-  download_url = 'https://github.com/SamuelBCook/buscador/archive/refs/tags/0.2.tar.gz',    
+  download_url = 'https://github.com/SamuelBCook/buscador/archive/refs/tags/0.3.tar.gz',    
   keywords = ['tools', 'json', 'easy'],   
   install_requires=[           
           'pandas',
-          'time',
-          'boto3'
+          'boto3',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" 
