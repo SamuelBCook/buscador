@@ -16,3 +16,6 @@ class FindValue:
                     stack.append(v)
                 if isinstance(v, list):
                     stack += v
+
+    def stuff(self):
+        pass
