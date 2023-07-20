@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'buscador',         
   packages = ['buscador'],   
-  version = '0.4',      
+  version = '0.5',      
   license='MIT',        
   description = 'Just a collection of helpful tools',   
   author = 'Samuel Cook',                   
