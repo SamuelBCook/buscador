@@ -2,15 +2,15 @@ from distutils.core import setup
 setup(
   name = 'buscador',         
   packages = ['buscador'],   
-  version = '0.1',      
+  version = '0.2',      
   license='MIT',        
   description = 'Just a collection of helpful tools',   
   author = 'Samuel Cook',                   
   author_email = 'samcook23@hotmail.com',     
   url = 'https://github.com/SamuelBCook',  
-  download_url = 'https://github.com/SamuelBCook/buscador/archive/refs/tags/0.1.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/SamuelBCook/buscador/archive/refs/tags/0.1.tar.gz',    
   keywords = ['tools', 'json', 'easy'],   
-  install_requires=[            # I get to this in a second
+  install_requires=[           
           'pandas',
           'json',
           'time',
@@ -21,6 +21,9 @@ setup(
     'Intended Audience :: Developers',      
     'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',  
-    'Programming Language :: Python :: 3.11',    
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.10', 
+    'Programming Language :: Python :: 3.9', 
+    'Programming Language :: Python :: 3.8',   
   ],
 )
