@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'buscador',         
   packages = ['buscador'],   
-  version = '0.2',      
+  version = '0.3',      
   license='MIT',        
   description = 'Just a collection of helpful tools',   
   author = 'Samuel Cook',                   
@@ -12,7 +12,6 @@ setup(
   keywords = ['tools', 'json', 'easy'],   
   install_requires=[           
           'pandas',
-          'json',
           'time',
           'boto3'
       ],
