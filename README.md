@@ -6,7 +6,7 @@ https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65
 
 https://dillinger.io
 
-New Version
+New Version*
 . Simply upload your new code to github, create a new release, then adapt the setup.py file (new download_url — according to your new release tag, new version), then run the setup.py and the twin command again (navigate to your folder first!)
 
 - python setup.py sdist
