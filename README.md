@@ -11,3 +11,6 @@ New Version*
 
 - python setup.py sdist
 - twine upload dist/*
+
+or if Vs already exist 
+- twine upload --skip-existing dist/*
