@@ -9,7 +9,7 @@ setup(
     author="Samuel Cook",
     author_email="samcook23@hotmail.com",
     url="https://github.com/SamuelBCook",
-    download_url="https://github.com/SamuelBCook/buscador/archive/refs/tags/0.4.tar.gz",
+    download_url="https://github.com/SamuelBCook/buscador/archive/refs/tags/v0.6.tar.gz",
     keywords=["tools", "json", "easy"],
     install_requires=[
         "pandas",
