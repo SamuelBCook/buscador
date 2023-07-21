@@ -1,11 +1,14 @@
 from distutils.core import setup
 
+VERSION = "0.13"
+DESCRIPTION = "Just a collection of helpful tools"
+
 setup(
     name="buscador",
     packages=["buscador"],
-    version="0.13",
+    version=VERSION,
     license="MIT",
-    description="Just a collection of helpful tools",
+    description=DESCRIPTION,
     author="Samuel Cook",
     author_email="samcook23@hotmail.com",
     url="https://github.com/SamuelBCook",
