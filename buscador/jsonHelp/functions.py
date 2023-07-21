@@ -5,42 +5,45 @@ from botocore.exceptions import ClientError
 from io import StringIO
 
 
-def write_json(data, bucket: str, key: str):
-    """
-    Write json to S3.
-    Args:
-        data (_type_): Data to be written
-        bucket (str): Destination S3 bucket
-        key (str): S3 object key
+class jsonHelp:
+    def __init__():
+        pass
 
-    Returns:
-        str: Write success message
-    """
-    s3_resource = boto3.resource("s3")
-    obj = s3_resource.Object(bucket, key)
-    try:
-        obj.put(Body=(bytes(json.dumps(data, indent=2).encode("UTF-8"))))
-        del obj
-        return f"Object '{key}' succesfully written to bucket '{bucket}'"
-    except:
-        raise Exception(f"Could not write object '{key}' to bucket '{bucket}'")
+    def write_json(data, bucket: str, key: str):
+        """
+        Write json to S3.
+        Args:
+            data (_type_): Data to be written
+            bucket (str): Destination S3 bucket
+            key (str): S3 object key
 
+        Returns:
+            str: Write success message
+        """
+        s3_resource = boto3.resource("s3")
+        obj = s3_resource.Object(bucket, key)
+        try:
+            obj.put(Body=(bytes(json.dumps(data, indent=2).encode("UTF-8"))))
+            del obj
+            return f"Object '{key}' succesfully written to bucket '{bucket}'"
+        except:
+            raise Exception(f"Could not write object '{key}' to bucket '{bucket}'")
 
-def read_json(bucket: str, key: str):
-    """
-    Read json from S3.
-    Args:
-        bucket (str): Source S3 bucket.
-        key (str): Target S3 object key.
+    def read_json(bucket: str, key: str):
+        """
+        Read json from S3.
+        Args:
+            bucket (str): Source S3 bucket.
+            key (str): Target S3 object key.
 
-    Returns:
-        dict: json as dict.
-    """
-    s3_resource = boto3.resource("s3")
-    file = s3_resource.Object(bucket, key)
-    file_contents = file.get()["Body"].read().decode("utf-8")
+        Returns:
+            dict: json as dict.
+        """
+        s3_resource = boto3.resource("s3")
+        file = s3_resource.Object(bucket, key)
+        file_contents = file.get()["Body"].read().decode("utf-8")
 
-    return json.loads(file_contents)
+        return json.loads(file_contents)
 
 
 def read_jsonl(bucket: str, key: str):
