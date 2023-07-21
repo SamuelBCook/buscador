@@ -2,8 +2,9 @@ LICENSE.txt
 README.md
 setup.cfg
 setup.py
+buscador/JsonStuff.py
+buscador/S3Stuff.py
 buscador/__init__.py
-buscador/classFindValue.py
 buscador.egg-info/PKG-INFO
 buscador.egg-info/SOURCES.txt
 buscador.egg-info/dependency_links.txt
