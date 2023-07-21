@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-VERSION = "0.13"
+VERSION = "0.1.0"
 DESCRIPTION = "Just a collection of helpful tools"
 
 setup(
