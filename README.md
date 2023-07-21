@@ -9,7 +9,7 @@ https://dillinger.io
 New Version*
 . Simply upload your new code to github, create a new release, then adapt the setup.py file (new download_url — according to your new release tag, new version), then run the setup.py and the twin command again (navigate to your folder first!)
 
-- python setup.py sdist
+- python3 setup.py sdist
 - twine upload dist/*
 
 or if Vs already exist 

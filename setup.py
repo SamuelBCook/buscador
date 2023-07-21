@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name="buscador",
     packages=["buscador"],
-    version="0.9",
+    version="0.10",
     license="MIT",
     description="Just a collection of helpful tools",
     author="Samuel Cook",
@@ -15,7 +15,6 @@ setup(
         "pandas",
         "boto3",
         "botocore",
-        "io",
     ],
     classifiers=[
         "Development Status :: 3 - Alpha",  # either "3 - Alpha", "4 - Beta" or "5 - Production/Stable"
